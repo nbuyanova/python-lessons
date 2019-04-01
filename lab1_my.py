@@ -1,7 +1,5 @@
+import time
 from datetime import datetime
-
-odds = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49, 51, 53, 55, 57,
-        59]
 
 right_this_minute = datetime.today().minute
 
@@ -19,7 +17,7 @@ if today == 5:
 elif today == 6:
     print('Recover. It is Sunday', end='\n\n')
 else:
-    print('Work, work, work. It is day #', today + 1, end='\n\n')
+    print('Work, work, work. It is', time.strftime("%A."), end='\n\n')
 
 from os import getcwd
 
